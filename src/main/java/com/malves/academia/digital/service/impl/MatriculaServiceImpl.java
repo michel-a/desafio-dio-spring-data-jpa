@@ -58,7 +58,7 @@ public class MatriculaServiceImpl implements IMatriculaService {
 		Optional<Matricula> matriculaOptional = repository.findById(id);
 		if (matriculaOptional.isPresent()) {
 			repository.deleteById(matriculaOptional.get().getId());
-			return "Matrícula escluída com sucesso!";
+			return "Matrícula excluída com sucesso!!";
 		}
 		return null;
 	}
